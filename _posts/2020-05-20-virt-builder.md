@@ -62,3 +62,25 @@ $ virt-builder fedora-29  -o vm1.img --format qcow2 \
 **--update** Update the system with the latest versions of the packages  
 **--run-command 'echo hello > /tmp/hello'** Run a shell command 
 
+## Checking the image
+We can run the image to check it but we can also run some check with other virt tools
+
+### Check the content of a file
+```
+$ virt-cat -a vm1.img /tmp/hello
+hello
+```
+### Check that packages were installed  
+```
+$ virt-customize -a vm1.img --run-command "rpm -qa|egrep 'vim|tmux' >/tmp/1"
+[   0.0] Examining the guest ...
+[   4.7] Setting a random seed
+[   4.7] Running: rpm -qa|egrep 'vim|tmux' >/tmp/1
+[   4.9] Finishing off
+$ virt-cat -a vm1.img /tmp/1
+vim-common-8.1.2198-1.fc29.x86_64
+vim-filesystem-8.1.2198-1.fc29.noarch
+vim-enhanced-8.1.2198-1.fc29.x86_64
+vim-minimal-8.1.2198-1.fc29.x86_64
+tmux-2.9a-2.fc29.x86_64
+```
