@@ -25,11 +25,11 @@ centos-7.5               x86_64     CentOS 7.5
 centos-7.6               x86_64     CentOS 7.6
 centos-7.7               x86_64     CentOS 7.7
 ...
-(output trancated)  
+(output truncated)  
 ```  
 
 ## Building and customizing an image  
-We'll demostate the usage of the tool by building a Fedora 29 image
+We'll demonstrate the usage of the tool by building a Fedora 29 image
 ```
 $ virt-builder fedora-29  -o vm1.img --format qcow2 \
   --size 20G --root-password file:/tmp/rootp \
@@ -53,12 +53,12 @@ $ virt-builder fedora-29  -o vm1.img --format qcow2 \
             Total usable space: 19.3G
                     Free space: 17.7G (91%)
 ```
-**-o vm1.img** The default image name is the the name of the OS e.g. fedora-29.img  
+**-o vm1.img** The default image name is the name of the OS e.g. fedora-29.img  
 **--format qcow2** We are using qcow2 type instead of raw  
 **--size 20G** Resize the image to 20G  
-**--root-password file:/tmp/rootp** Set the root password to the one stored at /tmp/rootp, otherwise a ramdomized password will be output to the console
+**--root-password file:/tmp/rootp** Set the root password to the one stored at /tmp/rootp, otherwise a randomized password will be output to the console
 **--hostanem myhostname** Set the hostname to myhostname  
 **--install 'vim,tmux'** Install the packages **vim** and **tmux**  
-**--updte** Update the system with the latest versions of the packages  
+**--update** Update the system with the latest versions of the packages  
 **--run-command 'echo hello > /tmp/hello'** Run a shell command 
 
