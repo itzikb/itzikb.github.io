@@ -58,7 +58,7 @@ Then fill in the details:
 **Hostname**  - RabbitMQ hostname  
 **Port Numbe** - 5672  
 **Virtual Host** - /  (Unless you created a different one)  
-**Topic**  
+**Topic** - blue (Otherwise you'll need to override it in the job)    
 **Exchange**  - myexchange  (In our example)  
 **Queue -** myqueue (In our example)  
 **Authentication Method**  - Choose Username and password (default for rabbitmq is guest:guest)  
