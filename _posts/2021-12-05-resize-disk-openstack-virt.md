@@ -1,7 +1,7 @@
 ---
 layout: single
 permalink: /resize-disk-openstack-virt/
-title: "Resize an existing disk of a compute in virt setup"
+title: "Resize an existing disk of a compute in a virt setup"
 tags: openstack
 comments: true
 ---
