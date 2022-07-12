@@ -7,9 +7,9 @@ comments: true
 ---
 Red Hat® OpenShift® is an enterprise-ready Kubernetes container platform built for an open hybrid cloud strategy. It provides a consistent application platform to manage hybrid cloud, multicloud, and edge deployments.  
 
-If you want to run commands on an Opeshift node (A master or a worker) you can use the Openshift client debug command.  
+If you want to run commands on an Openshift node (A master or a worker), you can use the Openshift client debug command.  
 
-First, Let's list our nodes  
+First, we list our nodes  
 ```
 $ oc get nodes
 NAME                          STATUS   ROLES    AGE   VERSION
