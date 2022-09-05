@@ -29,7 +29,6 @@ Follow the next steps:
 
 
 ## Use Python to write and read to a cell
-
 The following code writes and reads from a sheet called **Sheet1** in a book **test100**  
 The service account file is **mycreds.json**  
 
